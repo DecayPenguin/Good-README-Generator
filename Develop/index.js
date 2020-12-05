@@ -9,7 +9,11 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    fs.writeFile(fileName, data, (err) => {
+          if (err) throw err;
+          console.log('The file has been saved!');
+    });
+  }
 
 // function to initialize program
 function init() {
@@ -66,16 +70,20 @@ function init() {
   
   
     ])
-    .then(answers => {
-            console.log(generateMarkdown(answers));
-      console.info('Answers:', answers);
-      var formatAnswers = `${answers.projTitle}`
-      fs.writeFile('README.md', formatAnswers, (err) => {
-        if (err) throw err;
-        console.log('The file has been saved!');
-      });
+    // .then(answers => {
+    //         console.log(generateMarkdown(answers));
+    //   console.info('Answers:', answers);
+    //   var formatAnswers = `${answers.projTitle}`
       
-    });
+      
+    // }
+    .then(answers => {
+        var markdown = generateMarkdown(answers)
+        console.log(markdown)
+        writeToFile(markdown, "GENERATEDREADME.md")
+      }
+    
+    );
 }
 
 // function call to initialize program
