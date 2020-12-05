@@ -31,12 +31,6 @@ function init() {
       },
       {
         type: 'input',
-        name: 'toc',
-        message: 'Supply a Table of Contents.',
-        default: 'Table of Contents',
-      },
-      {
-        type: 'input',
         name: 'install',
         message: 'What is your project installation?',
         default: '.json',
@@ -64,19 +58,19 @@ function init() {
         name: 'questions',
         message: 'Add',
         default: 'questions',
-      }
+      },
       {
         type: 'input',
-        name: 'contributors',
-        message: 'Who is contributing to this project?(add your github username)',
+        name: 'github',
+        message: 'Add your github username to claim your work.',
         default: 'Me',
       },
       {
         type: 'input',
         name: 'email',
         message: 'What is your email?',
-        default: 'Me',
-      },
+        default: '@gmail.com',
+      }
   
   
     ])
