@@ -55,6 +55,12 @@ function init() {
       },
       {
         type: 'input',
+        name: 'contributors',
+        message: 'Who is contributing to this project?',
+        default: 'Me',
+      },
+      {
+        type: 'input',
         name: 'tests',
         message: 'How do we test it?',
         default: 'Use it',
@@ -70,7 +76,7 @@ function init() {
     ])
     .then(answers => {
       console.info('Answers:', answers);
-      var formatAnswers = `${answers.title}`
+      var formatAnswers = generateMarkdown(answers)
       fs.writeFile('README.md', formatAnswers, (err) => {
         if (err) throw err;
         console.log('The file has been saved!');
