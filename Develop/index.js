@@ -70,7 +70,7 @@ function init() {
     ])
     .then(answers => {
       console.info('Answers:', answers);
-      var formatAnswers = `${answers.projTitle}`
+      var formatAnswers = `${answers.title}`
       fs.writeFile('README.md', formatAnswers, (err) => {
         if (err) throw err;
         console.log('The file has been saved!');
