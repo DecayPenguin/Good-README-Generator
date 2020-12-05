@@ -45,7 +45,8 @@ function init() {
         type: 'list',
         name: 'license',
         message: 'Describe your project License.',
-        choices: ["CC", "GNU", "MIT"]
+        choices: ["CC"]
+        //, "GNU", "MIT"
       },
       {
         type: 'input',
