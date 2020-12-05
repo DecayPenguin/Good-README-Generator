@@ -56,12 +56,6 @@ function init() {
       },
       {
         type: 'input',
-        name: 'questions',
-        message: 'Add',
-        default: 'questions',
-      },
-      {
-        type: 'input',
         name: 'github',
         message: 'Add your github username to claim your work.',
         default: 'Me',

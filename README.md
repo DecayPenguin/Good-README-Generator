@@ -46,7 +46,9 @@ THEN this is added to the section of the README entitled Questions, with a link 
 WHEN I enter my email address
   Email address is accepted.
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+  There are instructions on how to contact the user.
 WHEN I click on the links in the Table of Contents
+  
 THEN I am taken to the corresponding section of the README
 ```
 
