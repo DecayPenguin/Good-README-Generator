@@ -27,9 +27,13 @@ WHEN I am prompted for information about my application repository
 THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
   
 WHEN I enter my project title
+  Working
 THEN this is displayed as the title of the README
+  Successful
 WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+  Can be entered
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+  No titles yet.
 WHEN I choose a license for my application from a list of options
 THEN a badge for that license is added hear the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
 WHEN I enter my GitHub username

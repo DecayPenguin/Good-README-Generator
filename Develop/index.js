@@ -55,12 +55,6 @@ function init() {
       },
       {
         type: 'input',
-        name: 'contributors',
-        message: 'Who is contributing to this project?',
-        default: 'Me',
-      },
-      {
-        type: 'input',
         name: 'tests',
         message: 'How do we test it?',
         default: 'Use it',
@@ -71,6 +65,18 @@ function init() {
         message: 'Add',
         default: 'questions',
       }
+      {
+        type: 'input',
+        name: 'contributors',
+        message: 'Who is contributing to this project?(add your github username)',
+        default: 'Me',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+        default: 'Me',
+      },
   
   
     ])
