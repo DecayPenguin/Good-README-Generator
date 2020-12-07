@@ -23,7 +23,6 @@ Or just review my GitHub here.
 https://github.com/DecayPenguin
 
 # Video Tutorial
-https://youtu.be/X6Xe3RFSvcI
 https://www.youtube.com/watch?v=X6Xe3RFSvcI&feature=youtu.be
 
 * This README.md file was made using this project.
